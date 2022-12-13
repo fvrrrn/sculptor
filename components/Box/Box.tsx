@@ -1,7 +1,8 @@
 'use client'
-import * as THREE from 'three'
+
+import { ThreeElements, useFrame } from '@react-three/fiber'
 import { FC, useRef, useState } from 'react'
-import { useFrame, ThreeElements } from '@react-three/fiber'
+import * as THREE from 'three'
 
 export const Box: FC<ThreeElements['mesh']> = (props) => {
   const ref = useRef<THREE.Mesh>(null!)
